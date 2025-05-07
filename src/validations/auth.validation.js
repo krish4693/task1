@@ -3,15 +3,24 @@ const { password } = require('./custom.validation');
 
 const register = {
   body: Joi.object().keys({
-    email: Joi.string().required().email(),
-    password: Joi.string().required().custom(password),
-    name: Joi.string().required(),
+    firstName: Joi.string().trim().required(),
+    lastName: Joi.string().trim().required(),
+    email: Joi.string().trim().lowercase().email().required(),
+    country: Joi.string().trim().required(),
+    password: Joi.string()
+      .min(8)
+      .regex(/[a-zA-Z]/, 'letters')
+      .regex(/\d/, 'numbers')
+      .required()
+      .messages({
+        'string.pattern.name': 'Password must contain at least one {#name}',
+      }),
   }),
 };
 
 const login = {
   body: Joi.object().keys({
-    email: Joi.string().required(),
+    email: Joi.string().trim().lowercase().email().required(),
     password: Joi.string().required(),
   }),
 };

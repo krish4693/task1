@@ -1,7 +1,9 @@
+const crypto = require('crypto');
 const httpStatus = require('http-status');
 const tokenService = require('./token.service');
 const userService = require('./user.service');
 const Token = require('../models/token.model');
+const User = require('../models/user.model');
 const ApiError = require('../utils/ApiError');
 const { tokenTypes } = require('../config/tokens');
 
@@ -12,11 +14,15 @@ const { tokenTypes } = require('../config/tokens');
  * @returns {Promise<User>}
  */
 const loginUserWithEmailAndPassword = async (email, password) => {
-  const user = await userService.getUserByEmail(email);
+  const user = await User.findOne({ email });
   if (!user || !(await user.isPasswordMatch(password))) {
     throw new ApiError(httpStatus.UNAUTHORIZED, 'Incorrect email or password');
   }
-  return user;
+  if (!user.isEmailVerified) {
+    throw new ApiError(httpStatus.UNAUTHORIZED, 'Please verify your email first');
+  }
+  const tokens = await tokenService.generateAuthTokens(user);
+  return { user, tokens };
 };
 
 /**
@@ -90,10 +96,34 @@ const verifyEmail = async (verifyEmailToken) => {
   }
 };
 
+/**
+ * Send verification email
+ * @param {User} user
+ * @returns {Promise}
+ */
+const verifyEmailToken = async (token) => {
+  // Hash the incoming token to match what’s in DB
+  const hashedToken = crypto.createHash('sha256').update(token).digest('hex');
+
+  const user = await User.findOne({
+    emailVerificationToken: hashedToken,
+    emailVerificationTokenExpires: { $gt: Date.now() },
+  });
+  if (!user) {
+    throw new ApiError(httpStatus.BAD_REQUEST, 'Token is invalid or has expired');
+  }
+
+  user.isEmailVerified = true;
+  user.emailVerificationToken = undefined;
+  user.emailVerificationTokenExpires = undefined;
+  await user.save();
+};
+
 module.exports = {
   loginUserWithEmailAndPassword,
   logout,
   refreshAuth,
   resetPassword,
   verifyEmail,
+  verifyEmailToken,
 };

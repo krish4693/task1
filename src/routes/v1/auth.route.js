@@ -6,14 +6,11 @@ const auth = require('../../middlewares/auth');
 
 const router = express.Router();
 
-router.post('/register', validate(authValidation.register), authController.register);
-router.post('/login', validate(authValidation.login), authController.login);
 router.post('/logout', validate(authValidation.logout), authController.logout);
 router.post('/refresh-tokens', validate(authValidation.refreshTokens), authController.refreshTokens);
 router.post('/forgot-password', validate(authValidation.forgotPassword), authController.forgotPassword);
 router.post('/reset-password', validate(authValidation.resetPassword), authController.resetPassword);
 router.post('/send-verification-email', auth(), authController.sendVerificationEmail);
-router.post('/verify-email', validate(authValidation.verifyEmail), authController.verifyEmail);
 
 module.exports = router;
 
@@ -71,6 +68,7 @@ module.exports = router;
  *       "400":
  *         $ref: '#/components/responses/DuplicateEmail'
  */
+router.post('/register', validate(authValidation.register), authController.register);
 
 /**
  * @swagger
@@ -119,6 +117,7 @@ module.exports = router;
  *               code: 401
  *               message: Invalid email or password
  */
+router.post('/login', validate(authValidation.login), authController.login);
 
 /**
  * @swagger
@@ -289,3 +288,4 @@ module.exports = router;
  *               code: 401
  *               message: verify email failed
  */
+router.post('/verify-email', validate(authValidation.verifyEmail), authController.verifyEmail);

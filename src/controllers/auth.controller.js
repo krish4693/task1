@@ -3,15 +3,25 @@ const catchAsync = require('../utils/catchAsync');
 const { authService, userService, tokenService, emailService } = require('../services');
 
 const register = catchAsync(async (req, res) => {
+  // 1) Create the user
   const user = await userService.createUser(req.body);
-  const tokens = await tokenService.generateAuthTokens(user);
-  res.status(httpStatus.CREATED).send({ user, tokens });
+
+  // 2) Generate a verification token & save on user
+  const verificationToken = user.createEmailVerificationToken();
+  await user.save();
+
+  // 3) Build a “simulated” verification link
+  const verifyUrl = `${req.protocol}://${req.get('host')}/v1/auth/verify-email?token=${verificationToken}`;
+
+  res.status(httpStatus.CREATED).send({
+    message: 'User registered. Please verify your email.',
+    verificationLink: verifyUrl,
+  });
 });
 
 const login = catchAsync(async (req, res) => {
   const { email, password } = req.body;
-  const user = await authService.loginUserWithEmailAndPassword(email, password);
-  const tokens = await tokenService.generateAuthTokens(user);
+  const { user, tokens } = await authService.loginUserWithEmailAndPassword(email, password);
   res.send({ user, tokens });
 });
 
@@ -43,8 +53,10 @@ const sendVerificationEmail = catchAsync(async (req, res) => {
 });
 
 const verifyEmail = catchAsync(async (req, res) => {
-  await authService.verifyEmail(req.query.token);
-  res.status(httpStatus.NO_CONTENT).send();
+  // 1) Delegate to authService
+  await authService.verifyEmailToken(req.query.token);
+
+  res.status(httpStatus.OK).send({ message: 'Email successfully verified.' });
 });
 
 module.exports = {
