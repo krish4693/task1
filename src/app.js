@@ -6,6 +6,8 @@ const compression = require('compression');
 const cors = require('cors');
 const passport = require('passport');
 const httpStatus = require('http-status');
+const swaggerUi = require('swagger-ui-express');
+const { swaggerSpecUser, swaggerSpecAdmin } = require('./config/swagger');
 const config = require('./config/config');
 const morgan = require('./config/morgan');
 const { jwtStrategy } = require('./config/passport');
@@ -52,6 +54,16 @@ if (config.env === 'production') {
 
 // v1 api routes
 app.use('/v1', routes);
+
+// Serve “user” docs:
+app.use('/api/docs/user', swaggerUi.serveFiles(swaggerSpecUser, {}), swaggerUi.setup(swaggerSpecUser, { explorer: true }));
+
+// Serve “admin” docs:
+app.use(
+  '/api/docs/admin',
+  swaggerUi.serveFiles(swaggerSpecAdmin, {}),
+  swaggerUi.setup(swaggerSpecAdmin, { explorer: true })
+);
 
 // send back a 404 error for any unknown api request
 app.use((req, res, next) => {

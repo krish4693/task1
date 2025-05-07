@@ -23,7 +23,7 @@ module.exports = router;
 
 /**
  * @swagger
- * /auth/register:
+ * /v1/auth/register:
  *   post:
  *     summary: Register as user
  *     tags: [Auth]
@@ -72,7 +72,7 @@ router.post('/register', validate(authValidation.register), authController.regis
 
 /**
  * @swagger
- * /auth/login:
+ * /v1/auth/login:
  *   post:
  *     summary: Login
  *     tags: [Auth]
@@ -264,7 +264,7 @@ router.post('/login', validate(authValidation.login), authController.login);
 
 /**
  * @swagger
- * /auth/verify-email:
+ * /v1/auth/verify-email:
  *   post:
  *     summary: verify email
  *     tags: [Auth]
