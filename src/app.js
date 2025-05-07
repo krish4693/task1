@@ -65,6 +65,9 @@ app.use(
   swaggerUi.setup(swaggerSpecAdmin, { explorer: true })
 );
 
+// Admin routes (protect these with JWT + role check inside controller)
+app.use('/v1/admin', require('./routes/v1/admin.route'));
+
 // send back a 404 error for any unknown api request
 app.use((req, res, next) => {
   next(new ApiError(httpStatus.NOT_FOUND, 'Not found'));

@@ -24,7 +24,7 @@ const optionsUser = {
   definition: baseDefinition,
   apis: [
     './src/routes/v1/auth.route.js',
-    // './src/routes/v1/user/**/*.js', // any other user-only routes
+    './src/routes/v1/user/**/*.js', // any other user-only routes
   ],
 };
 
@@ -32,6 +32,7 @@ const optionsAdmin = {
   definition: baseDefinition,
   apis: [
     './src/routes/v1/admin.route.js', // admin-only routes
+    './src/routes/v1/user-management.js',
   ],
 };
 
