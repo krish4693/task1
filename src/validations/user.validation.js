@@ -3,10 +3,13 @@ const { password, objectId } = require('./custom.validation');
 
 const createUser = {
   body: Joi.object().keys({
-    email: Joi.string().required().email(),
-    password: Joi.string().required().custom(password),
-    name: Joi.string().required(),
-    role: Joi.string().required().valid('user', 'admin'),
+    firstName: Joi.string().trim().required(),
+    lastName: Joi.string().trim().required(),
+    email: Joi.string().trim().lowercase().required().email(),
+    country: Joi.string().trim().required(),
+    password: Joi.string().required().min(8).pattern(new RegExp('^(?=.*[a-zA-Z])(?=.*\\d).+$')).messages({
+      'string.pattern.base': 'Password must contain at least one letter and one number',
+    }),
   }),
 };
 
