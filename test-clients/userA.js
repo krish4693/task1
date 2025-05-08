@@ -1,7 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
-/* eslint-disable no-console */
 const jwt = require('jsonwebtoken');
 const { io } = require('socket.io-client');
+const logger = require('../src/config/logger'); // adjust path as needed
 
 // 🔐 User A’s JWT (hard-coded as you provided)
 const tokenA =
@@ -21,36 +21,36 @@ const socket = io('http://localhost:3000', {
 });
 
 socket.on('connect', () => {
-  console.log(`✅ User A connected: socket=${socket.id}, userId=${userAId}`);
+  logger.info('✅ User A connected: socket=%s, userId=%s', socket.id, userAId);
 
   // Join a common room
   socket.emit('join_group', 'room1', () => {
-    console.log('🔸 User A joined room1');
+    logger.info('🔸 User A joined room1');
   });
 
   // Send a group message after 2s
   setTimeout(() => {
     socket.emit('group_message', { groupId: 'room1', message: `Hello room from A hoy (${userAId})` }, (ack) =>
-      console.log('👥 group_message ack:', ack)
+      logger.debug('👥 group_message ack: %o', ack)
     );
   }, 2000);
 
   // Send a private message to User B after 4s
   setTimeout(() => {
     socket.emit('private_message', { to: userBId, message: `Hi B (${userBId}), this is AB!` }, (ack) =>
-      console.log('✉️ private_message ack:', ack)
+      logger.debug('✉️ private_message ack: %o', ack)
     );
   }, 4000);
 });
 
 socket.on('group_message', ({ from, groupId, message }) => {
-  console.log(`📥 [A] Group ${groupId} from ${from}: ${message}`);
+  logger.info('📥 [A] Group %s from %s: %s', groupId, from, message);
 });
 
 socket.on('private_message', ({ from, message }) => {
-  console.log(`📩 [A] Private from ${from}: ${message} HOLA`);
+  logger.info('📩 [A] Private from %s: %s HOLA', from, message);
 });
 
 socket.on('connect_error', (err) => {
-  console.error('❌ A connect error:', err.message);
+  logger.error('❌ A connect error: %s', err.message);
 });

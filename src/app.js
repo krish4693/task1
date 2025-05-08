@@ -11,12 +11,19 @@ const { swaggerSpecUser, swaggerSpecAdmin } = require('./config/swagger');
 const config = require('./config/config');
 const morgan = require('./config/morgan');
 const { jwtStrategy } = require('./config/passport');
-const { authLimiter } = require('./middlewares/rateLimiter');
+
+// ← Import your two limiters
+const { authLimiter, rateLimiter } = require('./middlewares/rateLimiter');
+
 const routes = require('./routes/v1');
 const { errorConverter, errorHandler } = require('./middlewares/error');
 const ApiError = require('./utils/ApiError');
 
 const app = express();
+
+// ─── 1. GLOBAL RATE LIMITER ─────────────────────────────────────
+// Apply to all requests, before any other middleware or routes
+app.use(rateLimiter);
 
 if (config.env !== 'test') {
   app.use(morgan.successHandler);
@@ -47,12 +54,13 @@ app.options('*', cors());
 app.use(passport.initialize());
 passport.use('jwt', jwtStrategy);
 
-// limit repeated failed requests to auth endpoints
+// ─── 2. AUTH-SPECIFIC RATE LIMITER ──────────────────────────────
+// Wrap only the auth routes in production (login, signup, forgot-password, etc.)
 if (config.env === 'production') {
   app.use('/v1/auth', authLimiter);
 }
 
-// v1 api routes
+// v1 api routes (this now includes /v1/auth, /v1/users, etc.)
 app.use('/v1', routes);
 
 // Serve “user” docs:

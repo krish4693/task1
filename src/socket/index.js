@@ -1,9 +1,9 @@
-// src/sockets/index.js
 const jwt = require('jsonwebtoken');
 const config = require('../config/config');
+const logger = require('../config/logger');
 
 module.exports = (io) => {
-  // 1. Authenticate once on connection
+  // 1️⃣ Authentication middleware
   io.use((socket, next) => {
     const { token } = socket.handshake.auth;
     try {
@@ -11,36 +11,47 @@ module.exports = (io) => {
       // eslint-disable-next-line no-param-reassign
       socket.userId = userId;
       socket.join(userId);
+      logger.info('🛡️ Authenticated socket %s for user %s', socket.id, userId);
       next();
     } catch (err) {
+      logger.warn('❌ Authentication failed for socket %s: %s', socket.id, err.message);
       next(new Error('Authentication error'));
     }
   });
 
   io.on('connection', (socket) => {
-    // 2. Private messaging
+    logger.info('🔌 User connected: socket=%s, userId=%s', socket.id, socket.userId);
+
+    // 2️⃣ Private messaging
     socket.on('private_message', ({ to, message }) => {
-      // send to a single socket id
+      logger.debug('✉️ Private message from user %s to user %s: %s', socket.userId, to, message);
       io.to(to).emit('private_message', {
         from: socket.userId,
         message,
       });
     });
 
-    // 3. Group messaging
+    // 3️⃣ Group messaging
     socket.on('join_group', (groupId) => {
       socket.join(groupId);
+      logger.info('👥 User %s joined group %s', socket.userId, groupId);
     });
+
     socket.on('group_message', ({ groupId, message }) => {
+      logger.debug('🗣️ Group message in %s from user %s: %s', groupId, socket.userId, message);
       io.to(groupId).emit('group_message', {
         from: socket.userId,
         message,
       });
     });
+
     socket.on('leave_group', (groupId) => {
-      // eslint-disable-next-line no-console
-      console.log(`User ${socket.userId} left group ${groupId}`);
       socket.leave(groupId);
+      logger.info('🚪 User %s left group %s', socket.userId, groupId);
+    });
+
+    socket.on('disconnect', (reason) => {
+      logger.info('❌ Socket disconnected: socket=%s, userId=%s, reason=%s', socket.id, socket.userId, reason);
     });
   });
 };
