@@ -147,3 +147,329 @@
 2025-05-08T14:06:58.668Z info: ✅ Connected to MongoDB
 2025-05-08T14:06:58.699Z info: 🔌 Socket.IO initialized at path /ws
 2025-05-08T14:06:58.700Z info: 🚀 Server listening on port 3000
+2025-05-08T16:02:49.807Z warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2025-05-08T16:02:51.334Z info: ✅ Connected to MongoDB
+2025-05-08T16:02:51.381Z info: 🔌 Socket.IO initialized at path /ws
+2025-05-08T16:02:51.382Z info: 🚀 Server listening on port 3000
+2025-05-08T16:02:56.914Z warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2025-05-08T16:02:57.643Z info: ✅ Connected to MongoDB
+2025-05-08T16:02:57.674Z info: 🔌 Socket.IO initialized at path /ws
+2025-05-08T16:02:57.675Z info: 🚀 Server listening on port 3000
+2025-05-08T16:03:02.157Z warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2025-05-08T16:03:02.978Z info: ✅ Connected to MongoDB
+2025-05-08T16:03:02.992Z info: 🔌 Socket.IO initialized at path /ws
+2025-05-08T16:03:02.992Z info: 🚀 Server listening on port 3000
+2025-05-08T16:03:40.277Z info: GET /api/docs/user/ 304 - 2.663 ms
+2025-05-08T16:03:40.659Z info: GET /api/docs/user/swagger-ui.css 304 - 2.712 ms
+2025-05-08T16:03:40.660Z info: GET /api/docs/user/swagger-ui-bundle.js 304 - 2.585 ms
+2025-05-08T16:03:40.663Z info: GET /api/docs/user/swagger-ui-init.js 304 - 0.660 ms
+2025-05-08T16:03:40.664Z info: GET /api/docs/user/swagger-ui-standalone-preset.js 304 - 2.640 ms
+2025-05-08T17:11:07.913Z info: GET /api/docs/admin/ 304 - 9.500 ms
+2025-05-08T17:11:07.946Z info: GET /api/docs/admin/swagger-ui.css 304 - 1.174 ms
+2025-05-08T17:11:07.947Z info: GET /api/docs/admin/swagger-ui-bundle.js 304 - 0.358 ms
+2025-05-08T17:11:07.949Z info: GET /api/docs/admin/swagger-ui-init.js 304 - 0.433 ms
+2025-05-08T17:11:07.950Z info: GET /api/docs/admin/swagger-ui-standalone-preset.js 304 - 0.239 ms
+2025-05-08T17:11:41.254Z error: undefined
+2025-05-08T17:11:41.260Z error: POST /v1/admin/users 401 - 21.347 ms - message: Please authenticate
+2025-05-08T17:13:33.797Z info: GET /api/docs/user/ 304 - 2.135 ms
+2025-05-08T17:13:33.824Z info: GET /api/docs/user/swagger-ui.css 304 - 0.457 ms
+2025-05-08T17:13:33.825Z info: GET /api/docs/user/swagger-ui-bundle.js 304 - 0.385 ms
+2025-05-08T17:13:33.826Z info: GET /api/docs/user/swagger-ui-standalone-preset.js 304 - 0.413 ms
+2025-05-08T17:13:33.827Z info: GET /api/docs/user/swagger-ui-init.js 304 - 0.157 ms
+2025-05-08T17:14:02.229Z info: POST /v1/auth/login 200 - 691.201 ms
+2025-05-08T17:14:20.673Z info: GET /api/docs/admin/ 304 - 1.761 ms
+2025-05-08T17:14:20.702Z info: GET /api/docs/admin/swagger-ui.css 304 - 0.917 ms
+2025-05-08T17:14:20.703Z info: GET /api/docs/admin/swagger-ui-standalone-preset.js 304 - 0.385 ms
+2025-05-08T17:14:20.704Z info: GET /api/docs/admin/swagger-ui-init.js 304 - 0.246 ms
+2025-05-08T17:14:20.704Z info: GET /api/docs/admin/swagger-ui-bundle.js 304 - 0.954 ms
+2025-05-08T17:14:43.637Z info: User admin@example.com created new admin account: jane.doe@example.com
+2025-05-08T17:14:43.638Z info: POST /v1/admin/users 201 - 248.932 ms
+2025-05-08T17:15:26.353Z info: GET /api/docs/user/ 304 - 6.638 ms
+2025-05-08T17:15:26.384Z info: GET /api/docs/user/swagger-ui-standalone-preset.js 304 - 1.385 ms
+2025-05-08T17:15:26.385Z info: GET /api/docs/user/swagger-ui.css 304 - 0.635 ms
+2025-05-08T17:15:26.387Z info: GET /api/docs/user/swagger-ui-init.js 304 - 0.335 ms
+2025-05-08T17:15:26.387Z info: GET /api/docs/user/swagger-ui-bundle.js 304 - 1.325 ms
+2025-05-08T17:18:08.293Z error: undefined
+2025-05-08T17:18:08.296Z error: POST /v1/auth/register 400 - 8.253 ms - message: "password" is required, "role" is not allowed
+2025-05-08T17:18:31.713Z error: undefined
+2025-05-08T17:18:31.715Z error: POST /v1/auth/register 400 - 2.987 ms - message: "password" length must be at least 8 characters long, Password must contain at least one numbers, "role" is not allowed
+2025-05-08T17:18:40.646Z error: undefined
+2025-05-08T17:18:40.647Z error: POST /v1/auth/register 400 - 2.143 ms - message: Password must contain at least one numbers, "role" is not allowed
+2025-05-08T17:18:47.162Z error: undefined
+2025-05-08T17:18:47.175Z error: POST /v1/auth/register 400 - 2.814 ms - message: Password must contain at least one numbers, "role" is not allowed
+2025-05-08T17:20:47.399Z info: POST /v1/auth/register 201 - 265.364 ms
+2025-05-08T17:21:18.577Z info: POST /v1/auth/verify-email?token=e01ee956454953ab56757c1c0be6238a8ed9d637717a0c97e3884b111418ca7c 200 - 140.627 ms
+2025-05-08T17:21:54.463Z info: POST /v1/auth/login 200 - 186.052 ms
+2025-05-08T17:24:23.443Z info: 🗄️  Connected to MongoDB for seeding
+2025-05-08T17:24:23.585Z info: ✅ Admin already exists: jane.doe@example.com
+2025-05-08T17:25:44.051Z info: 🗄️  Connected to MongoDB for seeding
+2025-05-08T17:25:44.344Z info: 🚀 Default admin created: admin@example.com
+2025-05-08T17:30:16.466Z info: POST /v1/auth/login 200 - 168.601 ms
+2025-05-08T17:30:33.840Z info: GET /api/docs/admin/ 304 - 1.119 ms
+2025-05-08T17:30:33.872Z info: GET /api/docs/admin/swagger-ui.css 304 - 1.360 ms
+2025-05-08T17:30:33.873Z info: GET /api/docs/admin/swagger-ui-bundle.js 304 - 1.275 ms
+2025-05-08T17:30:33.874Z info: GET /api/docs/admin/swagger-ui-init.js 304 - 0.293 ms
+2025-05-08T17:30:33.874Z info: GET /api/docs/admin/swagger-ui-standalone-preset.js 304 - 1.242 ms
+2025-05-08T17:31:21.570Z info: User admin@example.com created new admin account: nolan@example.com
+2025-05-08T17:31:21.571Z info: POST /v1/admin/users 201 - 251.651 ms
+2025-05-08T17:38:53.967Z info: GET /api/docs/user/ 304 - 7.051 ms
+2025-05-08T17:38:54.011Z info: GET /api/docs/user/swagger-ui.css 304 - 0.776 ms
+2025-05-08T17:38:54.013Z info: GET /api/docs/user/swagger-ui-standalone-preset.js 304 - 0.382 ms
+2025-05-08T17:38:54.015Z info: GET /api/docs/user/swagger-ui-init.js 304 - 0.803 ms
+2025-05-08T17:38:54.017Z info: GET /api/docs/user/swagger-ui-bundle.js 304 - 2.902 ms
+2025-05-08T17:39:16.373Z info: POST /v1/auth/login 200 - 207.114 ms
+2025-05-08T17:39:40.941Z warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2025-05-08T17:39:42.321Z info: ✅ Connected to MongoDB
+2025-05-08T17:39:42.377Z info: 🔌 Socket.IO initialized at path /ws
+2025-05-08T17:39:42.394Z info: 🚀 Server listening on port 3000
+2025-05-08T17:39:43.734Z warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2025-05-08T17:39:44.458Z info: ✅ Connected to MongoDB
+2025-05-08T17:39:44.474Z info: 🔌 Socket.IO initialized at path /ws
+2025-05-08T17:39:44.475Z info: 🚀 Server listening on port 3000
+2025-05-08T17:39:48.801Z warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2025-05-08T17:39:49.544Z info: ✅ Connected to MongoDB
+2025-05-08T17:39:49.564Z info: 🔌 Socket.IO initialized at path /ws
+2025-05-08T17:39:49.565Z info: 🚀 Server listening on port 3000
+2025-05-08T17:39:51.956Z warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2025-05-08T17:39:52.725Z info: ✅ Connected to MongoDB
+2025-05-08T17:39:52.751Z info: 🔌 Socket.IO initialized at path /ws
+2025-05-08T17:39:52.753Z info: 🚀 Server listening on port 3000
+2025-05-08T17:40:24.671Z info: POST /v1/auth/login 200 - 197.397 ms
+2025-05-08T17:40:36.434Z warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2025-05-08T17:40:37.308Z info: ✅ Connected to MongoDB
+2025-05-08T17:40:37.347Z info: 🔌 Socket.IO initialized at path /ws
+2025-05-08T17:40:37.348Z info: 🚀 Server listening on port 3000
+2025-05-08T17:40:38.719Z warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2025-05-08T17:40:39.493Z info: ✅ Connected to MongoDB
+2025-05-08T17:40:39.514Z info: 🔌 Socket.IO initialized at path /ws
+2025-05-08T17:40:39.515Z info: 🚀 Server listening on port 3000
+2025-05-08T17:40:40.882Z warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2025-05-08T17:40:41.637Z info: ✅ Connected to MongoDB
+2025-05-08T17:40:41.650Z info: 🔌 Socket.IO initialized at path /ws
+2025-05-08T17:40:41.651Z info: 🚀 Server listening on port 3000
+2025-05-08T17:40:43.153Z warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2025-05-08T17:40:43.959Z info: ✅ Connected to MongoDB
+2025-05-08T17:40:43.984Z info: 🔌 Socket.IO initialized at path /ws
+2025-05-08T17:40:43.985Z info: 🚀 Server listening on port 3000
+2025-05-08T17:40:58.274Z warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2025-05-08T17:40:59.007Z info: ✅ Connected to MongoDB
+2025-05-08T17:40:59.036Z info: 🔌 Socket.IO initialized at path /ws
+2025-05-08T17:40:59.037Z info: 🚀 Server listening on port 3000
+2025-05-08T17:41:05.251Z warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2025-05-08T17:41:05.901Z info: ✅ Connected to MongoDB
+2025-05-08T17:41:05.928Z info: 🔌 Socket.IO initialized at path /ws
+2025-05-08T17:41:05.929Z info: 🚀 Server listening on port 3000
+2025-05-08T17:41:21.422Z warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2025-05-08T17:41:22.070Z info: ✅ Connected to MongoDB
+2025-05-08T17:41:22.096Z info: 🔌 Socket.IO initialized at path /ws
+2025-05-08T17:41:22.096Z info: 🚀 Server listening on port 3000
+2025-05-08T17:41:23.043Z warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2025-05-08T17:41:23.738Z info: ✅ Connected to MongoDB
+2025-05-08T17:41:23.766Z info: 🔌 Socket.IO initialized at path /ws
+2025-05-08T17:41:23.767Z info: 🚀 Server listening on port 3000
+2025-05-08T17:41:25.825Z warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2025-05-08T17:41:26.488Z info: ✅ Connected to MongoDB
+2025-05-08T17:41:26.507Z info: 🔌 Socket.IO initialized at path /ws
+2025-05-08T17:41:26.508Z info: 🚀 Server listening on port 3000
+2025-05-08T17:41:27.664Z warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2025-05-08T17:41:28.440Z info: ✅ Connected to MongoDB
+2025-05-08T17:41:28.470Z info: 🔌 Socket.IO initialized at path /ws
+2025-05-08T17:41:28.471Z info: 🚀 Server listening on port 3000
+2025-05-08T17:41:30.395Z warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2025-05-08T17:41:31.663Z info: ✅ Connected to MongoDB
+2025-05-08T17:41:31.682Z info: 🔌 Socket.IO initialized at path /ws
+2025-05-08T17:41:31.683Z info: 🚀 Server listening on port 3000
+2025-05-08T17:41:33.415Z warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2025-05-08T17:41:34.100Z info: ✅ Connected to MongoDB
+2025-05-08T17:41:34.130Z info: 🔌 Socket.IO initialized at path /ws
+2025-05-08T17:41:34.131Z info: 🚀 Server listening on port 3000
+2025-05-08T17:41:39.870Z warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2025-05-08T17:41:41.010Z info: ✅ Connected to MongoDB
+2025-05-08T17:41:41.033Z info: 🔌 Socket.IO initialized at path /ws
+2025-05-08T17:41:41.034Z info: 🚀 Server listening on port 3000
+2025-05-08T17:42:15.433Z info: 🛡️ Authenticated socket sbceqdGA4MwwMXyNAAAB for user 681bde330d40bc6d53e3ffb7
+2025-05-08T17:42:15.434Z info: 🔌 User connected: socket=sbceqdGA4MwwMXyNAAAB, userId=681bde330d40bc6d53e3ffb7
+2025-05-08T17:42:15.437Z info: ✅ User A connected: socket=sbceqdGA4MwwMXyNAAAB, userId=681bde330d40bc6d53e3ffb7
+2025-05-08T17:42:15.439Z info: 👥 User 681bde330d40bc6d53e3ffb7 joined group room1
+2025-05-08T17:42:17.442Z info: 📥 [A] Group undefined from 681bde330d40bc6d53e3ffb7: Hello room from A hoy (681bde330d40bc6d53e3ffb7)
+2025-05-08T17:42:22.805Z info: ❌ Socket disconnected: socket=sbceqdGA4MwwMXyNAAAB, userId=681bde330d40bc6d53e3ffb7, reason=transport close
+2025-05-08T17:43:16.060Z info: 🛡️ Authenticated socket eAWTdkVFQ-0sZMUkAAAD for user 681bde330d40bc6d53e3ffb7
+2025-05-08T17:43:16.060Z info: 🔌 User connected: socket=eAWTdkVFQ-0sZMUkAAAD, userId=681bde330d40bc6d53e3ffb7
+2025-05-08T17:43:16.065Z info: ✅ User A connected: socket=eAWTdkVFQ-0sZMUkAAAD, userId=681bde330d40bc6d53e3ffb7
+2025-05-08T17:43:16.065Z info: 👥 User 681bde330d40bc6d53e3ffb7 joined group room1
+2025-05-08T17:43:17.875Z info: 🛡️ Authenticated socket U78HrhSMraOUcDKdAAAF for user 681ce7ef2cb07781d04b8560
+2025-05-08T17:43:17.875Z info: 🔌 User connected: socket=U78HrhSMraOUcDKdAAAF, userId=681ce7ef2cb07781d04b8560
+2025-05-08T17:43:17.880Z info: ✅ User B connected: socket=U78HrhSMraOUcDKdAAAF, userId=681ce7ef2cb07781d04b8560
+2025-05-08T17:43:17.881Z info: 👥 User 681ce7ef2cb07781d04b8560 joined group room1
+2025-05-08T17:43:18.069Z info: 📥 [A] Group undefined from 681bde330d40bc6d53e3ffb7: Hello room from A hoy (681bde330d40bc6d53e3ffb7)
+2025-05-08T17:43:18.069Z info: 📥 [B] Group undefined from 681bde330d40bc6d53e3ffb7: Hello room from A hoy (681bde330d40bc6d53e3ffb7)
+2025-05-08T17:43:19.885Z info: 📥 [B] Group undefined from 681ce7ef2cb07781d04b8560: Hello room from B (681ce7ef2cb07781d04b8560)
+2025-05-08T17:43:19.885Z info: 📥 [A] Group undefined from 681ce7ef2cb07781d04b8560: Hello room from B (681ce7ef2cb07781d04b8560)
+2025-05-08T17:43:20.071Z info: 📩 [B] Private from 681bde330d40bc6d53e3ffb7: Hi B (681ce7ef2cb07781d04b8560), this is AB!
+2025-05-08T17:43:20.886Z info: 🚪 User 681ce7ef2cb07781d04b8560 left group room1
+2025-05-08T17:43:21.885Z info: 📩 [A] Private from 681ce7ef2cb07781d04b8560: Hey A (681bde330d40bc6d53e3ffb7), B here! HOLA
+2025-05-08T17:43:28.719Z info: ❌ Socket disconnected: socket=U78HrhSMraOUcDKdAAAF, userId=681ce7ef2cb07781d04b8560, reason=transport close
+2025-05-08T17:43:30.316Z info: ❌ Socket disconnected: socket=eAWTdkVFQ-0sZMUkAAAD, userId=681bde330d40bc6d53e3ffb7, reason=transport close
+2025-05-08T17:49:45.937Z info: 🛡️ Authenticated socket cdihR8aXZcqGlbsnAAAH for user 681bde330d40bc6d53e3ffb7
+2025-05-08T17:49:45.937Z info: 🔌 User connected: socket=cdihR8aXZcqGlbsnAAAH, userId=681bde330d40bc6d53e3ffb7
+2025-05-08T17:49:45.942Z info: ✅ User A connected: socket=cdihR8aXZcqGlbsnAAAH, userId=681bde330d40bc6d53e3ffb7
+2025-05-08T17:49:45.943Z info: 👥 User 681bde330d40bc6d53e3ffb7 joined group room1
+2025-05-08T17:49:47.948Z info: 📥 [A] Group undefined from 681bde330d40bc6d53e3ffb7: Hello room from A hoy (681bde330d40bc6d53e3ffb7)
+2025-05-08T17:49:57.521Z info: 🛡️ Authenticated socket 3MAHReH2bae41XfcAAAJ for user 681ce7ef2cb07781d04b8560
+2025-05-08T17:49:57.521Z info: 🔌 User connected: socket=3MAHReH2bae41XfcAAAJ, userId=681ce7ef2cb07781d04b8560
+2025-05-08T17:49:57.524Z info: ✅ User B connected: socket=3MAHReH2bae41XfcAAAJ, userId=681ce7ef2cb07781d04b8560
+2025-05-08T17:49:57.525Z info: 👥 User 681ce7ef2cb07781d04b8560 joined group room1
+2025-05-08T17:49:59.530Z info: 📥 [A] Group undefined from 681ce7ef2cb07781d04b8560: Hello room from B (681ce7ef2cb07781d04b8560)
+2025-05-08T17:49:59.531Z info: 📥 [B] Group undefined from 681ce7ef2cb07781d04b8560: Hello room from B (681ce7ef2cb07781d04b8560)
+2025-05-08T17:50:00.531Z info: 🚪 User 681ce7ef2cb07781d04b8560 left group room1
+2025-05-08T17:50:01.528Z info: 📩 [A] Private from 681ce7ef2cb07781d04b8560: Hey A (681bde330d40bc6d53e3ffb7), B here! HOLA
+2025-05-08T17:50:36.638Z info: ❌ Socket disconnected: socket=3MAHReH2bae41XfcAAAJ, userId=681ce7ef2cb07781d04b8560, reason=transport close
+2025-05-08T17:50:37.820Z info: ❌ Socket disconnected: socket=cdihR8aXZcqGlbsnAAAH, userId=681bde330d40bc6d53e3ffb7, reason=transport close
+2025-05-08T17:50:53.088Z info: 🛡️ Authenticated socket 8oeDvEvhh2eDDgBtAAAL for user 681bde330d40bc6d53e3ffb7
+2025-05-08T17:50:53.088Z info: 🔌 User connected: socket=8oeDvEvhh2eDDgBtAAAL, userId=681bde330d40bc6d53e3ffb7
+2025-05-08T17:50:53.091Z info: ✅ User A connected: socket=8oeDvEvhh2eDDgBtAAAL, userId=681bde330d40bc6d53e3ffb7
+2025-05-08T17:50:53.092Z info: 👥 User 681bde330d40bc6d53e3ffb7 joined group room1
+2025-05-08T17:50:55.094Z info: 📥 [A] Group undefined from 681bde330d40bc6d53e3ffb7: Hello room from A hoy (681bde330d40bc6d53e3ffb7)
+2025-05-08T17:50:55.385Z info: 🛡️ Authenticated socket g9sPkZdPLTl-T9XhAAAN for user 681ce7ef2cb07781d04b8560
+2025-05-08T17:50:55.385Z info: 🔌 User connected: socket=g9sPkZdPLTl-T9XhAAAN, userId=681ce7ef2cb07781d04b8560
+2025-05-08T17:50:55.390Z info: ✅ User B connected: socket=g9sPkZdPLTl-T9XhAAAN, userId=681ce7ef2cb07781d04b8560
+2025-05-08T17:50:55.391Z info: 👥 User 681ce7ef2cb07781d04b8560 joined group room1
+2025-05-08T17:50:57.095Z info: 📩 [B] Private from 681bde330d40bc6d53e3ffb7: Hi B (681ce7ef2cb07781d04b8560), this is AB!
+2025-05-08T17:50:57.394Z info: 📥 [B] Group undefined from 681ce7ef2cb07781d04b8560: Hello room from B (681ce7ef2cb07781d04b8560)
+2025-05-08T17:50:57.394Z info: 📥 [A] Group undefined from 681ce7ef2cb07781d04b8560: Hello room from B (681ce7ef2cb07781d04b8560)
+2025-05-08T17:50:58.397Z info: 🚪 User 681ce7ef2cb07781d04b8560 left group room1
+2025-05-08T17:50:59.394Z info: 📩 [A] Private from 681ce7ef2cb07781d04b8560: Hey A (681bde330d40bc6d53e3ffb7), B here! HOLA
+2025-05-08T17:51:09.694Z info: ❌ Socket disconnected: socket=8oeDvEvhh2eDDgBtAAAL, userId=681bde330d40bc6d53e3ffb7, reason=transport close
+2025-05-08T17:51:11.081Z info: ❌ Socket disconnected: socket=g9sPkZdPLTl-T9XhAAAN, userId=681ce7ef2cb07781d04b8560, reason=transport close
+2025-05-08T17:51:30.254Z info: 🛡️ Authenticated socket 190M_2P9r7yIF9EWAAAP for user 681bde330d40bc6d53e3ffb7
+2025-05-08T17:51:30.254Z info: 🔌 User connected: socket=190M_2P9r7yIF9EWAAAP, userId=681bde330d40bc6d53e3ffb7
+2025-05-08T17:51:30.257Z info: ✅ User A connected: socket=190M_2P9r7yIF9EWAAAP, userId=681bde330d40bc6d53e3ffb7
+2025-05-08T17:51:30.258Z info: 👥 User 681bde330d40bc6d53e3ffb7 joined group room1
+2025-05-08T17:51:32.263Z info: 📥 [A] Group undefined from 681bde330d40bc6d53e3ffb7: Hello room from A hoy (681bde330d40bc6d53e3ffb7)
+2025-05-08T17:51:33.960Z info: 🛡️ Authenticated socket p6z3QJIysCLCG6pEAAAR for user 681ce7ef2cb07781d04b8560
+2025-05-08T17:51:33.960Z info: 🔌 User connected: socket=p6z3QJIysCLCG6pEAAAR, userId=681ce7ef2cb07781d04b8560
+2025-05-08T17:51:33.963Z info: ✅ User B connected: socket=p6z3QJIysCLCG6pEAAAR, userId=681ce7ef2cb07781d04b8560
+2025-05-08T17:51:33.963Z info: 👥 User 681ce7ef2cb07781d04b8560 joined group room1
+2025-05-08T17:51:34.262Z info: 📩 [B] Private from 681bde330d40bc6d53e3ffb7: Hi B (681ce7ef2cb07781d04b8560), this is AB!
+2025-05-08T17:51:35.968Z info: 📥 [B] Group undefined from 681ce7ef2cb07781d04b8560: Hello room from B (681ce7ef2cb07781d04b8560)
+2025-05-08T17:51:35.968Z info: 📥 [A] Group undefined from 681ce7ef2cb07781d04b8560: Hello room from B (681ce7ef2cb07781d04b8560)
+2025-05-08T17:51:36.970Z info: 🚪 User 681ce7ef2cb07781d04b8560 left group room1
+2025-05-08T17:51:37.969Z info: 📩 [A] Private from 681ce7ef2cb07781d04b8560: Hey A (681bde330d40bc6d53e3ffb7), B here! HOLA
+2025-05-08T17:56:35.144Z error: undefined
+2025-05-08T17:56:35.147Z error: POST /v1/auth/login 400 - 18.794 ms - message: "password" is required, "passwo1rd" is not allowed
+2025-05-08T17:57:21.747Z error: undefined
+2025-05-08T17:57:21.749Z error: POST /v1/auth/login 400 - 5.569 ms - message: "email" must be a valid email
+2025-05-08T17:57:53.813Z error: undefined
+2025-05-08T17:57:53.817Z error: POST /v1/auth/login 400 - 3.748 ms - message: "email" must be a valid email
+2025-05-08T17:58:11.661Z error: undefined
+2025-05-08T17:58:11.661Z error: POST /v1/auth/login 401 - 120.685 ms - message: Incorrect email or password
+2025-05-08T18:01:25.613Z error: ❌ A connect error: xhr poll error
+2025-05-08T18:01:25.613Z error: ❌ B connect error: xhr poll error
+2025-05-08T18:01:26.004Z warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2025-05-08T18:01:26.618Z error: ❌ A connect error: xhr poll error
+2025-05-08T18:01:26.797Z error: ❌ B connect error: xhr poll error
+2025-05-08T18:01:27.068Z info: ✅ Connected to MongoDB
+2025-05-08T18:01:27.136Z info: 🔌 Socket.IO initialized at path /ws
+2025-05-08T18:01:27.137Z info: 🚀 Server listening on port 3000
+2025-05-08T18:01:28.036Z error: ❌ A connect error: xhr poll error
+2025-05-08T18:01:28.040Z error: ❌ B connect error: xhr poll error
+2025-05-08T18:01:28.326Z warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2025-05-08T18:01:28.937Z error: ❌ A connect error: xhr poll error
+2025-05-08T18:01:29.027Z info: ✅ Connected to MongoDB
+2025-05-08T18:01:29.028Z error: ❌ B connect error: xhr poll error
+2025-05-08T18:01:29.051Z info: 🔌 Socket.IO initialized at path /ws
+2025-05-08T18:01:29.052Z info: 🚀 Server listening on port 3000
+2025-05-08T18:01:30.091Z info: 🛡️ Authenticated socket nzs4SCq55UKUgLv4AAAB for user 681bde330d40bc6d53e3ffb7
+2025-05-08T18:01:30.092Z info: 🔌 User connected: socket=nzs4SCq55UKUgLv4AAAB, userId=681bde330d40bc6d53e3ffb7
+2025-05-08T18:01:30.095Z info: ✅ User A connected: socket=nzs4SCq55UKUgLv4AAAB, userId=681bde330d40bc6d53e3ffb7
+2025-05-08T18:01:30.097Z info: 👥 User 681bde330d40bc6d53e3ffb7 joined group room1
+2025-05-08T18:01:30.670Z error: ❌ B connect error: xhr poll error
+2025-05-08T18:01:30.674Z error: ❌ A connect error: xhr poll error
+2025-05-08T18:01:31.944Z error: ❌ A connect error: xhr poll error
+2025-05-08T18:01:32.140Z error: ❌ B connect error: xhr poll error
+2025-05-08T18:01:32.945Z error: ❌ B connect error: xhr poll error
+2025-05-08T18:01:32.946Z error: ❌ A connect error: xhr poll error
+2025-05-08T18:01:33.631Z error: ❌ B connect error: xhr poll error
+2025-05-08T18:01:34.343Z error: ❌ A connect error: xhr poll error
+2025-05-08T18:01:35.258Z error: ❌ B connect error: xhr poll error
+2025-05-08T18:01:35.260Z error: ❌ A connect error: xhr poll error
+2025-05-08T18:01:36.441Z error: ❌ A connect error: xhr poll error
+2025-05-08T18:01:36.449Z error: ❌ B connect error: xhr poll error
+2025-05-08T18:01:37.329Z error: ❌ B connect error: xhr poll error
+2025-05-08T18:01:37.814Z error: ❌ A connect error: xhr poll error
+2025-05-08T18:01:38.240Z error: ❌ B connect error: xhr poll error
+2025-05-08T18:01:38.241Z error: ❌ A connect error: xhr poll error
+2025-05-08T18:01:39.033Z error: ❌ B connect error: xhr poll error
+2025-05-08T18:01:39.421Z error: ❌ A connect error: xhr poll error
+2025-05-08T18:01:39.733Z error: ❌ A connect error: xhr poll error
+2025-05-08T18:01:39.736Z error: ❌ B connect error: xhr poll error
+2025-05-08T18:01:39.967Z warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2025-05-08T18:01:40.726Z error: ❌ B connect error: xhr poll error
+2025-05-08T18:01:40.749Z info: ✅ Connected to MongoDB
+2025-05-08T18:01:40.781Z info: 🔌 Socket.IO initialized at path /ws
+2025-05-08T18:01:40.782Z info: 🚀 Server listening on port 3000
+2025-05-08T18:01:41.222Z info: 🛡️ Authenticated socket 0PBKIm_T4BXUpbjQAAAB for user 681bde330d40bc6d53e3ffb7
+2025-05-08T18:01:41.223Z info: 🔌 User connected: socket=0PBKIm_T4BXUpbjQAAAB, userId=681bde330d40bc6d53e3ffb7
+2025-05-08T18:01:41.227Z info: ✅ User A connected: socket=0PBKIm_T4BXUpbjQAAAB, userId=681bde330d40bc6d53e3ffb7
+2025-05-08T18:01:41.228Z info: 👥 User 681bde330d40bc6d53e3ffb7 joined group room1
+2025-05-08T18:01:42.048Z error: ❌ A connect error: xhr poll error
+2025-05-08T18:01:42.054Z error: ❌ B connect error: xhr poll error
+2025-05-08T18:01:42.270Z warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2025-05-08T18:01:42.748Z error: ❌ A connect error: xhr poll error
+2025-05-08T18:01:42.947Z info: ✅ Connected to MongoDB
+2025-05-08T18:01:42.971Z info: 🔌 Socket.IO initialized at path /ws
+2025-05-08T18:01:42.972Z info: 🚀 Server listening on port 3000
+2025-05-08T18:01:43.530Z info: 🛡️ Authenticated socket 5z9ULwPb6tFIB5-SAAAB for user 681ce7ef2cb07781d04b8560
+2025-05-08T18:01:43.531Z info: 🔌 User connected: socket=5z9ULwPb6tFIB5-SAAAB, userId=681ce7ef2cb07781d04b8560
+2025-05-08T18:01:43.535Z info: ✅ User B connected: socket=5z9ULwPb6tFIB5-SAAAB, userId=681ce7ef2cb07781d04b8560
+2025-05-08T18:01:43.538Z info: 👥 User 681ce7ef2cb07781d04b8560 joined group room1
+2025-05-08T18:01:44.509Z info: 🛡️ Authenticated socket LTA1BqE6gqFm3BsrAAAD for user 681bde330d40bc6d53e3ffb7
+2025-05-08T18:01:44.509Z info: 🔌 User connected: socket=LTA1BqE6gqFm3BsrAAAD, userId=681bde330d40bc6d53e3ffb7
+2025-05-08T18:01:44.514Z info: ✅ User A connected: socket=LTA1BqE6gqFm3BsrAAAD, userId=681bde330d40bc6d53e3ffb7
+2025-05-08T18:01:44.515Z info: 👥 User 681bde330d40bc6d53e3ffb7 joined group room1
+2025-05-08T18:01:44.693Z error: ❌ B connect error: xhr poll error
+2025-05-08T18:01:44.695Z error: ❌ A connect error: xhr poll error
+2025-05-08T18:01:44.906Z warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2025-05-08T18:01:45.593Z info: ✅ Connected to MongoDB
+2025-05-08T18:01:45.601Z error: ❌ A connect error: xhr poll error
+2025-05-08T18:01:45.614Z info: 🔌 Socket.IO initialized at path /ws
+2025-05-08T18:01:45.614Z info: 🚀 Server listening on port 3000
+2025-05-08T18:01:46.073Z info: 🛡️ Authenticated socket 75xCtUgrLuDcUQ2UAAAB for user 681ce7ef2cb07781d04b8560
+2025-05-08T18:01:46.074Z info: 🔌 User connected: socket=75xCtUgrLuDcUQ2UAAAB, userId=681ce7ef2cb07781d04b8560
+2025-05-08T18:01:46.079Z info: ✅ User B connected: socket=75xCtUgrLuDcUQ2UAAAB, userId=681ce7ef2cb07781d04b8560
+2025-05-08T18:01:46.083Z info: 👥 User 681ce7ef2cb07781d04b8560 joined group room1
+2025-05-08T18:01:46.915Z info: 🛡️ Authenticated socket 9DEMDKXVP3HpHvMSAAAD for user 681bde330d40bc6d53e3ffb7
+2025-05-08T18:01:46.916Z info: 🔌 User connected: socket=9DEMDKXVP3HpHvMSAAAD, userId=681bde330d40bc6d53e3ffb7
+2025-05-08T18:01:46.919Z info: ✅ User A connected: socket=9DEMDKXVP3HpHvMSAAAD, userId=681bde330d40bc6d53e3ffb7
+2025-05-08T18:01:46.920Z info: 👥 User 681bde330d40bc6d53e3ffb7 joined group room1
+2025-05-08T18:01:47.933Z error: ❌ A connect error: xhr poll error
+2025-05-08T18:01:47.933Z error: ❌ B connect error: xhr poll error
+2025-05-08T18:01:48.143Z warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2025-05-08T18:01:48.510Z error: ❌ B connect error: xhr poll error
+2025-05-08T18:01:48.531Z error: ❌ A connect error: xhr poll error
+2025-05-08T18:01:48.863Z info: ✅ Connected to MongoDB
+2025-05-08T18:01:48.888Z info: 🔌 Socket.IO initialized at path /ws
+2025-05-08T18:01:48.889Z info: 🚀 Server listening on port 3000
+2025-05-08T18:01:49.940Z error: ❌ B connect error: xhr poll error
+2025-05-08T18:01:49.944Z error: ❌ A connect error: xhr poll error
+2025-05-08T18:01:50.152Z warn: Unable to connect to email server. Make sure you have configured the SMTP options in .env
+2025-05-08T18:01:50.642Z error: ❌ B connect error: xhr poll error
+2025-05-08T18:01:50.713Z error: ❌ A connect error: xhr poll error
+2025-05-08T18:01:51.152Z info: ✅ Connected to MongoDB
+2025-05-08T18:01:51.167Z info: 🔌 Socket.IO initialized at path /ws
+2025-05-08T18:01:51.168Z info: 🚀 Server listening on port 3000
+2025-05-08T18:01:51.936Z info: 🛡️ Authenticated socket xx5jCTKoiXZKZBcsAAAB for user 681bde330d40bc6d53e3ffb7
+2025-05-08T18:01:51.937Z info: 🔌 User connected: socket=xx5jCTKoiXZKZBcsAAAB, userId=681bde330d40bc6d53e3ffb7
+2025-05-08T18:01:51.943Z info: ✅ User A connected: socket=xx5jCTKoiXZKZBcsAAAB, userId=681bde330d40bc6d53e3ffb7
+2025-05-08T18:01:51.944Z info: 👥 User 681bde330d40bc6d53e3ffb7 joined group room1
+2025-05-08T18:01:53.561Z info: 🛡️ Authenticated socket 4FieJdaZzMmdHlyiAAAD for user 681ce7ef2cb07781d04b8560
+2025-05-08T18:01:53.561Z info: 🔌 User connected: socket=4FieJdaZzMmdHlyiAAAD, userId=681ce7ef2cb07781d04b8560
+2025-05-08T18:01:53.563Z info: ✅ User B connected: socket=4FieJdaZzMmdHlyiAAAD, userId=681ce7ef2cb07781d04b8560
+2025-05-08T18:01:53.566Z info: 👥 User 681ce7ef2cb07781d04b8560 joined group room1
+2025-05-08T18:01:53.948Z info: 📥 [B] Group undefined from 681bde330d40bc6d53e3ffb7: Hello room from A hoy (681bde330d40bc6d53e3ffb7)
+2025-05-08T18:01:53.948Z info: 📥 [A] Group undefined from 681bde330d40bc6d53e3ffb7: Hello room from A hoy (681bde330d40bc6d53e3ffb7)
+2025-05-08T18:01:55.569Z info: 📥 [A] Group undefined from 681ce7ef2cb07781d04b8560: Hello room from B (681ce7ef2cb07781d04b8560)
+2025-05-08T18:01:55.569Z info: 📥 [B] Group undefined from 681ce7ef2cb07781d04b8560: Hello room from B (681ce7ef2cb07781d04b8560)
+2025-05-08T18:01:55.947Z info: 📩 [B] Private from 681bde330d40bc6d53e3ffb7: Hi B (681ce7ef2cb07781d04b8560), this is AB!
+2025-05-08T18:01:56.572Z info: 🚪 User 681ce7ef2cb07781d04b8560 left group room1
+2025-05-08T18:01:57.569Z info: 📩 [A] Private from 681ce7ef2cb07781d04b8560: Hey A (681bde330d40bc6d53e3ffb7), B here! HOLA

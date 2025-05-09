@@ -13,7 +13,7 @@ const morgan = require('./config/morgan');
 const { jwtStrategy } = require('./config/passport');
 
 // ← Import your two limiters
-const { authLimiter, rateLimiter } = require('./middlewares/rateLimiter');
+const { authLimiter, globalLimiter } = require('./config/rateLimiter');
 
 const routes = require('./routes/v1');
 const { errorConverter, errorHandler } = require('./middlewares/error');
@@ -23,7 +23,7 @@ const app = express();
 
 // ─── 1. GLOBAL RATE LIMITER ─────────────────────────────────────
 // Apply to all requests, before any other middleware or routes
-app.use(rateLimiter);
+app.use(globalLimiter);
 
 if (config.env !== 'test') {
   app.use(morgan.successHandler);

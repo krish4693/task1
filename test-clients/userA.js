@@ -5,11 +5,11 @@ const logger = require('../src/config/logger'); // adjust path as needed
 
 // 🔐 User A’s JWT (hard-coded as you provided)
 const tokenA =
-  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2ODFiZGUzMzBkNDBiYzZkNTNlM2ZmYjciLCJpYXQiOjE3NDY2OTA2ODUsImV4cCI6MTc0NjY5MjQ4NSwidHlwZSI6ImFjY2VzcyJ9.p-p3rrdMtWdsoyBWChHxmirsVJ_AQeSXsNsscd-qOE0';
+  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2ODFiZGUzMzBkNDBiYzZkNTNlM2ZmYjciLCJpYXQiOjE3NDY3MjU5NTYsImV4cCI6MTc0NjcyNzc1NiwidHlwZSI6ImFjY2VzcyJ9.nT2mHP4Jl-09nq_-dNzgmwtgdEc6anLDac26g02uq2g';
 
 // 🔐 User B’s JWT (hard-coded as you provided)
 const tokenB =
-  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2ODFjNDdiMjBlYjAyYmRkMTFkMzk1ZGUiLCJpYXQiOjE3NDY2OTA3NjEsImV4cCI6MTc0NjY5MjU2MSwidHlwZSI6ImFjY2VzcyJ9.6vpiDCRakhdrNq05jXDVlfBY_7Fxf38zCS_bKmbrHnI';
+  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2ODFjZTdlZjJjYjA3NzgxZDA0Yjg1NjAiLCJpYXQiOjE3NDY3MjYwMjQsImV4cCI6MTc0NjczODAyNCwidHlwZSI6ImFjY2VzcyJ9.2V4mG_ocK0EDKdYs_n_3akmdWSwozPuCg3jWUSeXTzo';
 
 // Decode the `sub` claim (user IDs) from each token
 const userAId = jwt.decode(tokenA).sub; // "681bde330d40bc6d53e3ffb7"
